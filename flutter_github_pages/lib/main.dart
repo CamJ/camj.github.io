@@ -37,19 +37,7 @@ class MyHomePage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                ColorizeAnimatedTextKit(
-                  text: ['Build with Flutter'],
-                  textStyle: TextStyle(
-                    fontSize: 70.0,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  colors: [
-                    Colors.blue[800],
-                    Colors.blue[400],
-                    Colors.blue[200],
-                  ],
-                ),
+                HeaderText(),
                 DetailText(),
                 BouncingButton(),
               ],
@@ -76,6 +64,27 @@ class MyHomePage extends StatelessWidget {
         randColorList: [Colors.blue.withAlpha(210), Colors.white.withAlpha(210), Colors.grey.withAlpha(210)],
         awayAnimationCurve: Curves.easeInOutBack,
       ),
+    );
+  }
+}
+
+class HeaderText extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: ColorizeAnimatedTextKit(
+                  text: ['Build with Flutter'],
+                  textStyle: TextStyle(
+                    fontSize: 70.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  colors: [
+                    Colors.blue[800],
+                    Colors.blue[400],
+                    Colors.blue[200],
+                  ],
+                ),
     );
   }
 }
@@ -108,6 +117,7 @@ class _DetailTextState extends State<DetailText> {
   }
 }
 
+// Shoutout to https://github.com/flutter-devs/flutter_bouncing_button_animation_demo for most of the code below
 class BouncingButton extends StatefulWidget {
   @override
   _BouncingButtonState createState() => _BouncingButtonState();
@@ -122,7 +132,7 @@ class _BouncingButtonState extends State<BouncingButton> with SingleTickerProvid
     _buttonController = AnimationController(
       vsync: this,
       duration: Duration(
-        seconds: 2,
+        milliseconds: 1500,
       ),
     );
 
