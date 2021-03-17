@@ -4,7 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:particles_flutter/particles_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-const buildWithFlutterURL = 'https://medium.com/build-with-flutter';
+const buildWithFlutterURL = 'https://medium.com/@cjohnston-developer';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Build with Flutter',
+      title: 'Cameron Johnston',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         brightness: Brightness.dark,
@@ -73,7 +73,7 @@ class HeaderText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: ColorizeAnimatedTextKit(
-                  text: ['Build with Flutter'],
+                  text: ['Cameron Johnston'],
                   textStyle: TextStyle(
                     fontSize: 70.0,
                     color: Colors.white,
@@ -103,7 +103,7 @@ class _DetailTextState extends State<DetailText> {
       height: 100.0,
       child: RotateAnimatedTextKit(
         repeatForever: true,
-        text: ["iOS", "Android", "Web", "Desktop"],
+        text: ["Flutter Educator", "Medium Author", "Full-Stack Developer", "Freelancer"],
         textStyle: TextStyle(fontSize: 50.0, color: currentColor),
         displayFullTextOnTap: true,
         onNextBeforePause: (index, isLast) {
