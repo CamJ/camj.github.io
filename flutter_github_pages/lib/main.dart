@@ -73,18 +73,19 @@ class HeaderText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: ColorizeAnimatedTextKit(
-                  text: ['Cameron Johnston'],
-                  textStyle: TextStyle(
-                    fontSize: 70.0,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  colors: [
-                    Colors.blue[800],
-                    Colors.blue[400],
-                    Colors.blue[200],
-                  ],
-                ),
+        textAlign: TextAlign.center,
+        text: ['Cameron Johnston'],
+        textStyle: TextStyle(
+          fontSize: 70.0,
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
+        ),
+        colors: [
+          Colors.blue[800],
+          Colors.blue[400],
+          Colors.blue[200],
+        ],
+      ),
     );
   }
 }
