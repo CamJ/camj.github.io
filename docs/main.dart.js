@@ -46222,18 +46222,18 @@ N.Ww.prototype={
 $1:function(a){return!0},
 $S:40}
 F.xK.prototype={
-O:function(a,b){return new S.py(new F.xL(null),"Build with Flutter",X.a2L(C.ap,C.jC),null)}}
+O:function(a,b){return new S.py(new F.xL(null),"Cameron Johnston",X.a2L(C.ap,C.jC),null)}}
 F.xL.prototype={
 O:function(a,b){var s=null,r=t.w,q=t.fQ
 return new M.qF(T.Ae(C.ih,H.b([T.HQ(new Y.oj(50,b.a6(r).f.a.b*0.95,b.a6(r).f.a.a,!0,250,1.5,!0,P.c0(0,800),C.u3,15,!0,H.b([P.bf(210,33,150,243),P.bf(210,255,255,255),P.bf(210,158,158,158)],t.r8),s),s,s),T.HQ(new T.vY(C.ao,C.lL,C.lM,C.kC,s,C.n3,s,H.b([new F.x3(s),new F.ow(s),new F.oc(s)],q),s),s,s)],q),C.i8),s)}}
 F.x3.prototype={
 O:function(a,b){var s=null
-return M.w0(s,new G.vX(G.a9P(H.b(["Build with Flutter"],t.i),C.ak,A.iC(s,s,C.j,s,s,s,s,s,s,s,s,70,s,C.cf,s,s,!0,s,s,s,s,s,s),C.bG,H.b([C.fu.h(0,800),C.fu.h(0,400),C.fu.h(0,200)],t.r8),C.m),C.is,!1,!1,s,s,s,s,!0,!1,3,s),s,s,s,s,s,s,s)}}
+return M.w0(s,new G.vX(G.a9P(H.b(["Cameron Johnston"],t.i),C.ak,A.iC(s,s,C.j,s,s,s,s,s,s,s,s,70,s,C.cf,s,s,!0,s,s,s,s,s,s),C.bG,H.b([C.fu.h(0,800),C.fu.h(0,400),C.fu.h(0,200)],t.r8),C.m),C.is,!1,!1,s,s,s,s,!0,!1,3,s),s,s,s,s,s,s,s)}}
 F.ow.prototype={
 aK:function(){return new F.C_(C.j,C.l)}}
 F.C_.prototype={
 O:function(a,b){var s=null
-return M.w0(s,new R.zv(R.abL(H.b(["iOS","Android","Web","Desktop"],t.i),C.ak,A.iC(s,s,this.d,s,s,s,s,s,s,s,s,50,s,s,s,s,!0,s,s,s,s,s,s),C.uj,s,C.bC,C.m),C.kI,!0,!1,s,s,s,new F.Tt(this),!0,!0,3,s),s,s,s,100,s,s,s)}}
+return M.w0(s,new R.zv(R.abL(H.b(["Flutter Educator","Medium Author","Full-Stack Developer","Freelancer"],t.i),C.ak,A.iC(s,s,this.d,s,s,s,s,s,s,s,s,50,s,s,s,s,!0,s,s,s,s,s,s),C.uj,s,C.bC,C.m),C.kI,!0,!1,s,s,s,new F.Tt(this),!0,!0,3,s),s,s,s,100,s,s,s)}}
 F.Tt.prototype={
 $2:function(a,b){var s=this.a
 s.aA(new F.Ts(s,[C.wc,new P.A(4282500350),new P.A(4278409628),C.j],a))},
@@ -46256,7 +46256,7 @@ q:function(a){this.G2(0)
 this.d.q(0)},
 O:function(a,b){var s=null,r=this.e,q=K.Ht(100),p=H.b([new O.eW(0,new P.A(2147483648),new P.x(0,5),12)],t.ec),o=H.b([C.fu.h(0,800),C.fu.h(0,200)],t.r8)
 return K.l1(r,new F.SP(this),M.w0(s,new T.zx(C.U,C.lL,C.lM,C.kC,s,C.n3,s,H.b([new T.m1(C.un,new L.p5(C.uG,C.j,s),s),L.RA("Follow on Medium",A.iC(s,s,C.j,s,s,s,s,s,s,s,s,18,s,C.cf,s,s,!0,s,s,s,s,s,s),s)],t.fQ),s),s,s,new S.fG(s,s,s,q,p,new T.ib(C.qC,C.qA,C.eB,o,s,s),C.ay),75,s,s,250))},
-NM:function(){T.XA("https://medium.com/build-with-flutter")}}
+NM:function(){T.XA("https://medium.com/@cjohnston-developer")}}
 F.SQ.prototype={
 $1:function(a){var s
 if(a===C.B)this.a.d.lr(0)
