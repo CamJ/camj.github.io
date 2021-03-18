@@ -1,4 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:particles_flutter/particles_flutter.dart';
@@ -11,6 +13,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  final FirebaseAnalytics _analytics = FirebaseAnalytics();
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,13 +23,15 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         brightness: Brightness.dark,
       ),
-      home: MyHomePage(),
+      home: MyHomePage(_analytics),
+      navigatorObservers: [FirebaseAnalyticsObserver(analytics: _analytics),],
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
-  MyHomePage({Key key}) : super(key: key);
+  final FirebaseAnalytics analytics;
+  MyHomePage(this.analytics, {Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +45,7 @@ class MyHomePage extends StatelessWidget {
               children: <Widget>[
                 HeaderText(),
                 DetailText(),
-                BouncingButton(),
+                BouncingButton(analytics),
               ],
             ),
           ),
@@ -120,6 +126,10 @@ class _DetailTextState extends State<DetailText> {
 
 // Shoutout to https://github.com/flutter-devs/flutter_bouncing_button_animation_demo for most of the code below
 class BouncingButton extends StatefulWidget {
+  final FirebaseAnalytics analytics;
+
+  BouncingButton(this.analytics);
+
   @override
   _BouncingButtonState createState() => _BouncingButtonState();
 }
@@ -221,6 +231,7 @@ class _BouncingButtonState extends State<BouncingButton> with SingleTickerProvid
   }
 
   void _tapDown() {
+    widget.analytics.logEvent(name: "follow_button_click");
     launch(buildWithFlutterURL);
   }
 }

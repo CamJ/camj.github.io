@@ -26,7 +26,7 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>flutter_github_pages</title>
+  <title>Cameron Johnston</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -39,6 +39,29 @@
         navigator.serviceWorker.register('flutter_service_worker.js');
       });
     }
+  </script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+  
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+  
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyDDYq8nWApcEcLO25F_4erKxaeYxzvBpkc",
+      authDomain: "flutter-portfolio-ec0e7.firebaseapp.com",
+      projectId: "flutter-portfolio-ec0e7",
+      storageBucket: "flutter-portfolio-ec0e7.appspot.com",
+      messagingSenderId: "408806349195",
+      appId: "1:408806349195:web:1200773c829c2efb72f78e",
+      measurementId: "G-1E6NJTVR46"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
   </script>
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
